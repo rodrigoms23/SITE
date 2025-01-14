@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/arquivo.css" />
+    <script src="./Javascript/formulario.js"></script>
+    <title>Formulário</title>
+  </head>
+  <body>
+    <header>
+      <h1>Fórmula Souza Formulário de Contato</h1>
+    </header>
+    <div class="links">
+      <a href="./formulario.html">Formulário</a>
+      <a class="alternativas" href="atividades.html">Atividades</a>
+      <a class="alternativas" href="localizacao.html">Localização</a>
+      <a class="alternativas" href="PaginaPrincipal.html">Home</a>
+    </div>
+    <h2>Preencha os dados abaixo</h2>
+    <form id="" action="PaginaPrincipal.html" method="get" name="formulario">
+      <div>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="texto" />
+        <span id="spanNome"></span>
+      </div>
+      <div>
+        <label for="cpf">Cpf:</label>
+        <input type="text" name="cpf" id="cpf" placeholder="12345678910" />
+        <span id="spanCpf"></span>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="xxx@gmail.com"
+        />
+        <span id="spanEmail"></span>
+      </div>
+      <div>
+        <label for="data">Data de nascimento:</label>
+        <input type="date" name="data" id="data" />
+        <span id="spanData"></span>
+      </div>
+      <div>
+        <label for="telefone">Telefone:</label>
+        <input type="text" name="telefone" id="telefone" />
+        <span id="spanFone"></span>
+      </div>
+      <br />
+      <fieldset id="estadoCivil" class="estadoCivil">
+        <legend id="civil">Estado civil</legend>
+        <input
+          class="alternativas"
+          type="radio"
+          name="estadocivil"
+          value="solteiro"
+        />Solteiro
+        <input
+          class="alternativas"
+          type="radio"
+          name="estadocivil"
+          value="casado"
+        />Casado
+        <input
+          class="alternativas"
+          type="radio"
+          name="estadocivil"
+          value="divorciado"
+        />Divorciado
+      </fieldset>
+      <br />
+      <fieldset id="motivoContato" class="motivoContato">
+        <legend class="contato">Motivo do Contato</legend>
+        <input
+          class="alternativas2"
+          type="checkbox"
+          name="motivo"
+          id="Materiais de construção"
+        />Materiais de construção
+        <input
+          class="alternativas2"
+          type="checkbox"
+          name="motivo"
+          id="Imoveis"
+        />Imóveis
+        <input
+          class="alternativas2"
+          type="checkbox"
+          name="motivo"
+          id="Projetos"
+        />Projetos
+      </fieldset>
+      <br />
+      <button type = "submit" id="verificador">Verificar</button>
+      <button id="envio">Enviar</button>
+      <input type="reset" onclick="resetar()" name="limpar" id="limpar" />
+    </form>
+    <div class="resultado"></div>
+    <footer>Contato Formulário</footer>
+  </body>
+</html>
